@@ -1,6 +1,6 @@
 # Tesla UI Clone
 
-Esse projeto foi feito para praticar minhas habilidades com Next.js, Typescript, e especialmente styled components e os React Hooks. Essa aplicação é um clone da home page do site da <a href="https://www.tesla.com" target="_blank" rel="noreferrer">Tesla</a>.
+Esse projeto foi feito para praticar minhas habilidades com Next.js, Typescript, e especialmente styled components e os React Hooks. Essa aplicação é um clone da home page do site da <a href="https://www.tesla.com" target="__blank" rel="noreferrer">Tesla</a> e também conta com design responsivo.
 
 Você pode ve-la em funcionamento <a href="https://tesla-ui-clone-five.vercel.app/" rel="noreferrer">Clicando aqui</a>.
 
