@@ -1,7 +1,8 @@
 import DefaultOverlayContent from '../DefaultOverlayContent'
+import UniqueOverlay from '../UniqueOverlay'
 import { ModelsWrapper, ModelSection } from '../Model'
 
-import { Container } from './styles'
+import { Container, Spacer } from './styles'
 
 function Page() {
   return (
@@ -9,28 +10,53 @@ function Page() {
       <ModelsWrapper>
         <div>
           {[
-            'Model One',
-            'Model Two',
-            'Model Three',
-            'Model Four',
-            'Model Five',
-            'Model Six',
-            'Model Seven'
-          ].map((modelName) => (
+            {
+              name: 'Model 3',
+              description: 'Order Online for Touchless Delivery'
+            },
+            {
+              name: 'Model Y',
+              description: 'Order Online for Touchless Delivery'
+            },
+            {
+              name: 'Model S',
+              description: 'Order Online for Touchless Delivery'
+            },
+            {
+              name: 'Model X',
+              description: 'Order Online for Touchless Delivery'
+            },
+            {
+              name: 'Solar Panels',
+              description: 'Lowest Cost Solar Panels in America'
+            },
+            {
+              name: 'Solar Roof',
+              description: 'Produce Clean Energy From Your Roof'
+            },
+            {
+              name: 'Accessories',
+              description: ''
+            },
+          ].map((item) => (
             <ModelSection
               className="colored"
-              modelName={modelName}
+              modelName={item.name}
               overlayNode={
                 <DefaultOverlayContent
-                  label={modelName}
-                  description="Order online for delivery"
+                  label={item.name}
+                  description={item.description}
                 />
               }
-              key={modelName}
+              key={item.name}
             />
 
           ))}
         </div>
+
+        <Spacer />
+
+        <UniqueOverlay />
       </ModelsWrapper>
     </Container>
   )
